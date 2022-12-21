@@ -20,7 +20,7 @@ def worker():
             options.add_experimental_option('useAutomationExtension', False)
             browser = webdriver.Chrome(chrome_options=options)
             browser.get("https://kschoolclick.netlify.app/")
-            browser.execute_script("localStorage.setItem('schoolName', 'KsCtOoL(유성중)');")
+            browser.execute_script("localStorage.setItem('schoolName', '유성중');")
             browser.execute_script("localStorage.setItem('schoolCode', '7451054');")
             browser.refresh()
             browser.find_element(By.CSS_SELECTOR, "body > main > div.alert-container.svelte-lsgmqq > div > span.close.fontSize.svelte-lsgmqq").click()
